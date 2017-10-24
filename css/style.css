@@ -1,0 +1,229 @@
+body
+{
+	background-image: url("../img/image2.jpg");
+	background-size: cover;
+}
+
+.wrapper{
+	overflow: hidden;
+}
+
+.section-up p{
+	text-align: center;
+	font-size: 48px;
+	text-transform: capitalize;
+	font-family: sans-serif;
+	margin-top: 120px;
+}
+
+.section-btn{
+	text-align: center;
+	font-size: 18px;
+	font-family: sans-serif;
+
+}
+
+/*form*/
+.input-form{
+	display: flex;
+	justify-content: center;
+}
+
+
+.input-form .email-form{
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	width: 250px;
+	box-shadow: none;
+	margin-right: 11px;
+	text-align: center;
+	line-height: 21px;
+	padding: 10px 15px;
+	text-transform: capitalize;
+	
+}
+
+.input-form .btn{
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 105px;
+	height: 35px;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 14px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	cursor: progress;
+	margin-top: 10px;
+}
+
+.input-form .btn:hover{
+	background-color: #313131;
+	color: #fff;
+}
+
+/*social*/
+.social .square1{
+	width: 50px;
+	height: 50px;
+	padding: 10px 0px;
+	background: #333333;
+	border-radius: 6px;
+}
+.social .square1:hover{
+	background-color: #3B5998;
+	opacity: 0.9;
+}
+
+.social .square2{
+	width: 50px;
+	height: 50px;
+	padding: 10px 0px;
+	background: #333333;
+	border-radius: 6px;
+}
+
+.social .square2:hover{
+	background-color: #1DA1F2;
+	opacity: 0.9;
+
+}
+
+.social .square3{
+	width: 50px;
+	height: 50px;
+	padding: 10px 0px;
+	background: #333333;
+	border-radius: 6px;
+}
+
+.social .square3:hover{
+	background-color: #057AB6;
+	opacity: 0.9;
+
+}
+
+.social .square4{
+	width: 50px;
+	height: 50px;
+	padding: 10px 0px;
+	background: #333333;
+	border-radius: 6px;
+}
+
+.social .square4:hover{
+	background-color: #DB4437;
+	opacity: 0.9;
+
+}
+
+.social{
+	text-align: center;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.social ul{
+	list-style: none;
+}
+
+.social ul li {
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.social ul li:last-child {
+	margin-right: 0;
+}
+
+.social ul li a {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+	height: 35px;
+	position: relative;
+}
+
+.social ul li a .fa {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 14px;
+	transition: all .3s ease 0s;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	
+}
+
+.social ul li a .fa:hover{
+	font-size: 23px;
+}
+
+/*footer*/
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 16px;
+    font-family: sans-serif;
+
+}
+
+@media (max-width: 480px){
+	.flip-clock-dot.top{
+		top: 43px;
+	}
+
+	.flip-clock-wrapper ul {
+		width: 30px;	
+		height: 55px;
+		
+	}
+	
+	.flip-clock-divider{
+		height: 79px;
+	}
+
+	.flip-clock-dot{
+		width: 5px;
+		height: 5px;
+		left: -2px;
+	}
+
+	.flip-clock-dot.bottom{
+		bottom: 35px;
+	}
+
+	.flip-clock-dot.top{
+		top: 27px;
+	}
+
+	.flip-clock-wrapper ul li a div div.inn{
+		font-size: 30px;
+	}
+
+	.flip-clock-divider .flip-clock-label{
+		right: -66px;
+	}
+
+	.flip-clock-wrapper ul li{
+		line-height: 60px;
+	}
+
+	.flip-clock-divider.minutes .flip-clock-label{
+		right: -68px;
+	}
+
+	.flip-clock-divider.seconds .flip-clock-label{
+		right: -75px;
+	}
+
+}

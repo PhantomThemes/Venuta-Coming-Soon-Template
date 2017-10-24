@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+	   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   		<title>Comming-Soon</title>
+
+		<link rel="stylesheet" href="css/flipclock.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+
+
+	</head>
+
+	<body>
+
+	<div class="wrapper">
+
+		<div class="section-up">
+			<p>We are coming soon</p>
+		</div>
+
+		<div class="clock" style="margin:2em;"></div>
+		<div class="message"></div>
+
+		<div class="section-btn">
+			<p>Please subscribe to stay tuned</p>		
+		</div>
+
+		<!-- form -->
+		<div class="input-form">
+			<form class="email-form" action="" method="post">
+			  <input type="text" name="email" placeholder="Enter your Email Address" class="email-form">
+			  <button type="submit" class="btn email-btn">Subscribe</button>
+			</form>
+		</div>
+
+		<!-- social -->
+		<div class="social">
+		
+			<ul>
+				<li><span class="square1"><a href="#" class="icon" target="_blank"><i class="fa fa-facebook"></i></a></span></li>
+				<li><span class="square2"><a href="#" class="icon" target="_blank"><i class="fa fa-twitter"></i></a></span></li>
+				<li><span class="square3"><a href="#" class="icon" target="_blank"><i class="fa fa-linkedin"></i></a></span></li>
+				<li><span class="square4"><a href="#" class="icon" target="_blank"><i class="fa fa-google-plus"></i></a></span></li>
+			</ul>
+			
+		</div>
+
+		<!-- footer -->
+		<div class="footer">
+   			 <p >&copy;Designed By | <a href="https://phantomthemes.com" target="_blank"> Phanthom Themes </a></p>
+  		</div>
+			
+	</div>	
+
+	<!-- count-down -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="js/flipclock.js"></script>
+
+	<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			var clock;
+
+			clock = $('.clock').FlipClock({
+		        clockFace: 'DailyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(900880);
+		    clock.setCountdown(true);
+		    clock.start();
+
+		});
+	</script>
+	
+	</body>
+</html>
